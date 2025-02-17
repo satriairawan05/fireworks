@@ -10,7 +10,7 @@ const Firework = () => {
   const [newYearMessage, setNewYearMessage] = useState(["Menunggu Tahun Baru!"]);
 
   function timeLeft() {
-    const newYearDate = new Date("Januari 1,2025 00:00:00").getTime();
+    const newYearDate = new Date("Januari 1,2026 00:00:00").getTime();
     const nowDate = new Date().getTime();
     const remainingTime = newYearDate - nowDate;
     return remainingTime;
@@ -28,7 +28,7 @@ const Firework = () => {
           <Typewriter words={newYearMessage} loop={false} cursorStyle={"_"} cursor />
         </span>
         <span className="z-50 text-2xl font-bold text-white">
-          <Countdown date={Date.now() + timeLeft()} onComplete={() => setNewYearMessage(["Selamat Tahun Baru", "HNY 2025"])} />
+          <Countdown date={Date.now() + timeLeft()} onComplete={() => setNewYearMessage(["Selamat Tahun Baru", "HNY 2026"])} />
         </span>
       </div>
     </>
