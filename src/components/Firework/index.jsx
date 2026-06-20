@@ -10,7 +10,7 @@ const Firework = () => {
   const [newYearMessage, setNewYearMessage] = useState(["Menunggu Tahun Baru!"]);
 
   function timeLeft() {
-    const newYearDate = new Date("Januari 1,2026 00:00:00").getTime();
+    const newYearDate = new Date("Januari 1,2027 00:00:00").getTime();
     const nowDate = new Date().getTime();
     const remainingTime = newYearDate - nowDate;
     return remainingTime;
