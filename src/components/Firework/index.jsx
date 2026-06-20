@@ -28,7 +28,7 @@ const Firework = () => {
           <Typewriter words={newYearMessage} loop={false} cursorStyle={"_"} cursor />
         </span>
         <span className="z-50 text-2xl font-bold text-white">
-          <Countdown date={Date.now() + timeLeft()} onComplete={() => setNewYearMessage(["Selamat Tahun Baru", "HNY 2026"])} />
+          <Countdown date={Date.now() + timeLeft()} onComplete={() => setNewYearMessage(["Selamat Tahun Baru", "HNY 2027"])} />
         </span>
       </div>
     </>
